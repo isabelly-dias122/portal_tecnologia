@@ -1,0 +1,76 @@
+body {
+  background: linear-gradient(to right, rgb(244, 217, 244), rgb(247, 147, 214));
+  font-family: 'Poppins', cursive;
+  margin: 0;
+  padding: 0;
+}
+h1{
+    font-size: 2.2em;
+    background: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    color: palevioletred;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+h3, h2{
+    color: palevioletred;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2, h3 {
+  color: palevioletred;
+  margin-bottom: 15px;
+}
+h2, h3 {
+  background: rgb(234, 167, 241);
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: palevioletred;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: hotpink;
+  transform: scale(1.1);
+}
+.destaques{
+  list-style: none;
+  padding: 0;
+}
+.destaques li{
+  margin-bottom: 10px;
+}
+.destaques a{
+  display: block;
+  text-decoration: none;
+  background: palevioletred;
+  color: white;
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.destaques a:hover{
+  background: hotpink;
+  transform: scale(1.05);
+}
