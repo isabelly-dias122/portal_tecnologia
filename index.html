@@ -1,70 +1,76 @@
-<!DOCTYPE <html>
-    <html lang="pt-br">
-        <head>
-            <!--Configurações básicas da página-->
-            <meta charset="UTF-8">
-            <link rel="stylesheet" href="style.css">
-            <title> Portal Tech - ETEC</title>
-        </head>
-        <body>
-            <!-- HEADER -->
-             <header>
-                <h1>Portal de Tecnologia e Inovação <img src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG42.png" alt=" "
-                            width="60"
-                            height="60"></h1>
-                <p>Conteúdos para alunos do curso técnico.</p>
-                <!-- Menu de navegação interno-->
-                 <nav>
-                    <h3>Menu <img src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG42.png" alt=" "
-                            width="35"
-                            height="35"></h3>
-                    <ul>
-                        <li><a href="#noticias">Noticias</a>"</li>
-                        <li><a href="#cursos">Cursos</a>"</li>
-                        <li><a href="#tabela">Cronograma</a>"</li>
-                        <li><a href="#midia">Noticias</a>"</li>
-                        <li><a href="#faq">FAQ</a>"</li>
-                        <li><a href="#contato">Contato</a>"</li>
-                    </ul>
-                 </nav>
+<!DOCTYPE html>
+<!-- Define que estamos usando HTML5 -->
 
-                 <hr>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Permite acentuação (muito importante para PT-BR) -->
 
-             </header>
-             <!--Conteúdo principal-->
-             <main>
-                <div class="container">
-                    <div class="Conteudo">
-                        <!-- tudo que vc já tem (noticias, cursos,tabela,midia,faq,contato) -->
-                    </div>
-                    <aside class="sidebar">
-                        <h3>Destaques <img src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG42.png" alt=" "
-                            width="35"
-                            height="35"></h3>
-                        <ul class="destaques">
-                            <li><a href="#">📌 Novo curso de IA</a></li>
-                            <li><a href="#">📌 Feira tecnológica</a></li>
-                            <li><a href="#">📌 Vagas de estágio</a></li>
-                        </ul>
-                        <hr>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz o site funcionar bem em celular -->
 
-                        <h3>Dicas <img src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG42.png" alt=" "
-                            width="35"
-                            height="35"></h3>
-                        <p>Pratique lógica todos os dias e construa projetos.</p>
-                        </aside>
-                    </div>
-                    <hr>
-                    <!-- SEÇÃO DE NOTÍCIAS-->
-                     <section id="noticias">
-                        <header>
-                            <h2>Destaques da Semana <img src="https://pngimg.com/uploads/hello_kitty/hello_kitty_PNG42.png" alt=" "
-                            width="35"
-                            height="35"></h2>
-                        </header>
-                     </section>
-                    
-             </main>
+    <title>Guia CSS - Aula</title>
 
-        </body>
-    </html>
+    <!-- BOA PRÁTICA ✅ -->
+    <!-- Usar CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="topo">
+        <h1>Brecho!</h1>
+        <p class="subtitulo">Roupinhas com o melhro preço.</p>
+    </header>
+
+    <!-- ================= MENU ================= -->
+   <nav class="menu">
+    <a href="#">Início</a>
+    <a href="#">Produtos</a>
+    <a href="#">Contato</a>
+</nav>
+
+    <!-- ================= CONTEÚDO ================= -->
+    <main class="container">
+
+        <div class="card destaque">
+        <h2>Calças</h2>
+        <p>Calças em ótimo estado.</p>
+        <div class="preco">R$ 89,90</div>
+        <button>Comprar</button>
+    </div>
+
+        <!-- CARD 1 -->
+        <div class="card">
+        <h2>Blusas Femininas</h2>
+        <p>Blusas femininas em ótimo estado.</p>
+        <div class="preco">R$ 39,90</div>
+        <button>Comprar</button>
+    </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+        <h2>Casacos.</h2>
+        <p>Casacos em ótimo estado.</p>
+        <div class="preco">R$ 99,90</div>
+        <button>Comprar</button>
+    </div>
+
+        <!-- CARD 3 -->
+       <div class="card">
+        <h2>Casacos.</h2>
+        <p>Blusas Masculinas em ótimo estado.</p>
+        <div class="preco">R$ 39,90</div>
+        <button>Comprar</button>
+    </div>
+
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
+    <footer class="rodape">
+        <p>© 2026 - Aula de CSS</p>
+    </footer>
+
+</body>
+</html>

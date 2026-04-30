@@ -1,76 +1,162 @@
+/* ================= RESET BÁSICO ================= */
+/* Remove margens padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* BOA PRÁTICA ✅ evita problemas de tamanho */
+}
+
+
+/* ================= BODY ================= */
 body {
-  background: linear-gradient(to right, rgb(244, 217, 244), rgb(247, 147, 214));
-  font-family: 'Poppins', cursive;
-  margin: 0;
-  padding: 0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #fdf6f0, #f7e7dc);
+    color: #5a4636;
+    min-height: 100vh;
 }
-h1{
-    font-size: 2.2em;
-    background: white;
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 20px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-    color: palevioletred;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+
+/* ================= HEADER ================= */
+.topo {
+    background: linear-gradient(135deg, #d8bfa9, #f3d9c8);
     text-align: center;
-}
-h3, h2{
-    color: palevioletred;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-h1, h2, h3 {
-  color: palevioletred;
-  margin-bottom: 15px;
-}
-h2, h3 {
-  background: rgb(234, 167, 241);
-  padding: 8px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 40px 20px;
+    color: #6b3e26;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-/* Menu */
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  padding: 10px;
+.topo h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  background: palevioletred;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: 0.3s;
+
+/* Subtítulo */
+.subtitulo {
+     font-size: 16px;
+    font-style: italic;
+    opacity: 0.9;
 }
 
-nav a:hover {
-  background: hotpink;
-  transform: scale(1.1);
+/* ================= MENU ================= */
+.menu {
+     display: flex;
+    justify-content: center;
+    gap: 20px;
+     /* Espaço entre os itens */
+    background: #c89f84;
+    padding: 15px;
 }
-.destaques{
-  list-style: none;
-  padding: 0;
+
+.menu a {
+     text-decoration: none;
+      /* Remove sublinhado */
+    color: white;
+    font-weight: bold;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+    
 }
-.destaques li{
-  margin-bottom: 10px;
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    background: #fff4ec;
+    color: #8a5a44;
 }
-.destaques a{
-  display: block;
-  text-decoration: none;
-  background: palevioletred;
-  color: white;
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 10px;
-  transition: 0.3s;
+
+/* ================= CONTAINER ================= */
+.container {
+     display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 50px 20px;
 }
-.destaques a:hover{
-  background: hotpink;
-  transform: scale(1.05);
+
+/* ================= CARD ================= */
+.card {
+     background: #fffaf6;
+    width: 250px;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    transition: 0.4s;
+    border: 1px solid #ead7c9;
+}
+.card :hover{
+    transform: translateY(-8px);
+    box-shadow: 0 14px 25px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+    color: #8a5a44;
+    margin-bottom: 12px;
+}
+
+
+.card p {
+    font-size: 14px;
+    color: #6a5848;
+    margin-bottom: 15px;
+}
+/* preço */
+.preco {
+    font-size: 22px;
+    color: #a0522d;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botão */
+.card button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #b77b57;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #8a5a44;
+    transform: scale(1.05);
+}
+
+/* Card com destaque */
+.destaque {
+    border: 2px solid #d8bfa9;
+    background: #fff4ec;
+}
+
+/* ================= RODAPÉ ================= */
+.rodape {
+    text-align: center;
+    padding: 20px;
+    background: #c89f84;
+    color: white;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVO ================= */
+/* BOA PRÁTICA ✅ para celular */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topo h1 {
+        font-size: 28px;
+    }
 }
